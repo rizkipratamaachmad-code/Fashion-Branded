@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVERO Luxury Brand</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">AVERO</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#produk">Collection</a>
+    <a href="#why">Why Us</a>
+    <a href="#review">Review</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="cart" onclick="toggleCart()">🛒 <span id="cartCount">0</span></div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content reveal">
+    <h1>Elevate Your Style</h1>
+    <p>Discover premium fashion crafted with precision and elegance.</p>
+    <button onclick="scrollToProduk()">Shop Now</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container reveal">
+    <h2>About AVERO</h2>
+    <p>
+      AVERO adalah brand fashion premium yang menghadirkan desain modern,
+      kualitas terbaik, dan detail eksklusif. Kami percaya fashion bukan
+      hanya pakaian, tetapi identitas dan kepercayaan diri.
+    </p>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="section dark">
+  <div class="container">
+    <h2 class="reveal">Why Choose Us</h2>
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3>Premium Material</h3>
+        <p>Bahan berkualitas tinggi, nyaman dipakai sepanjang hari.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Exclusive Design</h3>
+        <p>Desain modern dan elegan yang tidak pasaran.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Fast Delivery</h3>
+        <p>Pengiriman cepat dan aman ke seluruh Indonesia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="section">
+  <div class="container">
+    <h2 class="reveal">Our Collection</h2>
+    <div id="produkContainer" class="produk-container"></div>
+  </div>
+</section>
+
+<!-- REVIEW -->
+<section id="review" class="section dark">
+  <div class="container">
+    <h2 class="reveal">Customer Reviews</h2>
+    <div class="grid-3">
+      <div class="card reveal">⭐⭐⭐⭐⭐<p>“Kualitas terbaik yang pernah saya beli.”</p></div>
+      <div class="card reveal">⭐⭐⭐⭐⭐<p>“Desainnya mewah dan elegan.”</p></div>
+      <div class="card reveal">⭐⭐⭐⭐⭐<p>“Packaging dan pengiriman sangat profesional.”</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container reveal">
+    <h2>Contact Us</h2>
+    <p>Siap tampil lebih percaya diri? Hubungi kami sekarang.</p>
+    <a href="https://wa.me/6285779149770" class="btn-wa" target="_blank">
+      Order via WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- CART -->
+<div class="cart-box" id="cartBox">
+  <h3>Shopping Cart</h3>
+  <div id="cartItems"></div>
+  <h4>Total: Rp <span id="totalHarga">0</span></h4>
+  <button onclick="checkout()">Checkout WhatsApp</button>
+</div>
+
+<footer>
+  © 2026 AVERO Luxury Brand. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
